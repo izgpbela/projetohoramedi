@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA"
+    tools:context=".ui.AddEditMedicationActivity">
+
+    <!-- Container do nome do medicamento com fundo cinza claro -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp">
+
+    <EditText
+        android:id="@+id/et_medication_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Medicamento"
+        android:inputType="textCapWords"
+        android:background="@android:color/white"/>
+
+</LinearLayout>
+
+    <!-- Container da dosagem com fundo cinza claro -->
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp">
+
+<EditText
+        android:id="@+id/et_medication_dosage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dosagem (ex: 500mg, 1 comprimido)"
+        android:inputType="text"
+        android:background="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Container do horário com fundo cinza claro -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Horário do Alarme"
+    android:textSize="16sp"
+    android:layout_marginBottom="8dp"/>
+
+<TimePicker
+    android:id="@+id/time_picker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:timePickerMode="spinner"
+    android:background="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Botão Salvar com verde musgo -->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salvar"
+        android:backgroundTint="#2E7D32"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
