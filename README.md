@@ -1,4 +1,4 @@
-# 📱 Medication Reminder App 
+# 📱 HoraMed App 
 
 ## 📝 Descrição
 Aplicativo de Lembrete de Medicamentos desenvolvido em Java para Android que ajuda os usuários a gerenciar sua medicação com lembretes automáticos.
